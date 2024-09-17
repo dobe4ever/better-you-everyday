@@ -14,7 +14,7 @@ const FloatButton = () => {
       {/* Floating Button */}
       <button
         onClick={toggleChat}
-        className="fixed bottom-4 right-4 border-2 border-white bg-orange-main text-white rounded-full p-3 shadow-md hover:bg-orange-main transition-colors duration-300"
+        className="fixed bottom-4 right-4 border-2 border-white bg-orange-main text-white rounded-full p-4 shadow-md hover:bg-orange-main transition-colors duration-300"
         aria-label="Open chat"
       >
         <Bot size={24} />

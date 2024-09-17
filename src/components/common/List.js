@@ -1,53 +1,32 @@
-// src/components/todos/TodosList.js
+// src/components/common/List.js
 import React, { useState } from 'react';
-import List from '../common/List';
-import TodoCard from '../todos/TodoCard';
-import { todos as initialTodos } from '../data/dummyData';
 
-const TodosList = ({ todos, onToggle }) => {
-    const [todoList, setTodoList] = useState(todos);
+const List = ({ title, items, renderItem }) => {
+  const [hideCompleted, setHideCompleted] = useState(false);
+  const filteredItems = hideCompleted ? items.filter(item => !item.isCompleted) : items;
 
-    const handleEditTodo = (id, newTitle) => {
-        setTodoList(todoList.map(todo =>
-            todo.id === id ? { ...todo, title: newTitle } : todo
-        ));
-    };
-
-    const handleDeleteTodo = (id) => {
-        setTodoList(todoList.filter(todo => todo.id !== id));
-    };
-
-    const handleUpdateNotes = (id, notes) => {
-        setTodoList(todoList.map(todo =>
-            todo.id === id ? { ...todo, notes, hasNotes: notes.trim() !== '' } : todo
-        ));
-    };
-
-    const handleToggleRecurring = (id) => {
-        setTodoList(todoList.map(todo =>
-            todo.id === id ? { ...todo, isRecurring: !todo.isRecurring } : todo
-        ));
-    };
-
-    return (
-        <>
-            <List
-                title="To-Dos"
-                items={todoList}
-                renderItem={(todo) => (
-                    <TodoCard
-                        key={todo.id}
-                        todo={todo}
-                        onToggle={() => setTodoList(todoList.map(t => t.id === todo.id ? {...t, isCompleted: !t.isCompleted} : t))}
-                        onEdit={handleEditTodo}
-                        onDelete={handleDeleteTodo}
-                        onUpdateNotes={handleUpdateNotes}
-                        onRepeatToggle={handleToggleRecurring}
-                    />
-                )}
-            />
-        </>
-    );
+  return (
+    <div className="m-1">
+      {/* hide/show completed */}
+      {/* <div className="flex justify-between items-center m-2">
+        <h2 className="text-style-basic">{title}</h2>
+        <button 
+          className="text-sm text-gray-600"
+          onClick={() => setHideCompleted(!hideCompleted)}
+        >
+          {hideCompleted ? 'Show Completed' : 'Hide Completed'}
+        </button>
+      </div> */}
+      {/* list items */}
+      <div>
+        {filteredItems.map((item) => (
+          <div key={item.id}>
+            {renderItem(item)}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
-export default TodosList;
+export default List;

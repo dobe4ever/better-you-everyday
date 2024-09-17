@@ -38,7 +38,7 @@ const TopBar = () => {
 
   return (
     <>
-      <header className="bg-orange-main border-transparent p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-10 h-14">
+      <header className="bg-orange-main border-transparent p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-20 h-14">
         <div className="flex items-center">
           <IconButtonWhite icon={Menu} onClick={() => setIsMenuOpen(true)} className="mr-3" />
 

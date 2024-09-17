@@ -1,5 +1,4 @@
 // src/components/ui/ContextualMenu.js
-
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import IconButtonWhite from '../common/IconButtonWhite';

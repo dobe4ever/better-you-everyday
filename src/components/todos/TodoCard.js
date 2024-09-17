@@ -50,7 +50,7 @@ const TodoCard = ({ todo, onToggle, onEdit, onDelete, onUpdateNotes, onRepeatTog
 
   return (
     <motion.div
-      className="bg-white rounded-lg shadow-md mb-4 overflow-hidden"
+      className="border bg-white rounded-lg shadow-md m-2 overflow-hidden"
       initial={false}
       animate={{ height: isExpanded ? 'auto' : 'fit-content' }}
       transition={{ duration: 0.3 }}

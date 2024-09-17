@@ -17,7 +17,7 @@ const UserProfile = ({
 
   return (
     // main card container
-    <div className="bg-transparent w-full max-w-5xl overflow-hidden transition-all duration-300 p-2 sm:p-4 mt-4">
+    <div className="bg-transparent w-full max-w-5xl overflow-hidden transition-all duration-300 p-2 sm:p-4 mt-2">
 
       {/* avatar & username */}
       <div className="flex flex-col items-center mb-1">

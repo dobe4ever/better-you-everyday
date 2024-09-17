@@ -59,7 +59,7 @@ const HabitCard = ({ habit, onToggle, onCardClick }) => {
 
   return (
     <motion.div
-      className="rounded-lg shadow-md mb-2 overflow-hidden"
+      className="border rounded-lg shadow-md m-2 overflow-hidden"
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
     >
