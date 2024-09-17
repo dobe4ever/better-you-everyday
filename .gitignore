@@ -1,4 +1,9 @@
-bkup.md
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
 
 # Logs
 logs
