@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import IconButton from '../common/IconButton';
-import { Trash, Palette, Lock, Check, ChevronDown, Info, AlarmClock, Star, Repeat, Flag, Calendar, Flame, Zap, Trophy, Target } from 'lucide-react';
+import { Trash, Palette, Lock, Check, ChevronDown, AlarmClock, Star, Repeat, Flag, Calendar, Flame, Zap, Trophy, Target } from 'lucide-react';
 
 const HabitCard = ({ habit, onToggle, onCardClick }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -66,15 +66,14 @@ const HabitCard = ({ habit, onToggle, onCardClick }) => {
       <div className="flex bg-white">
         {/* Main content */}
         <div className="flex-grow p-3 py-2 flex flex-col" onClick={() => onCardClick(habit.id)}>
-          <div className="flex items-center space-x-2 mb-2">
+          <div className="flex items-center space-x-2 mt-2">
             <IconButton
               icon={Check}
               onClick={(e) => handleAction(e, onToggle)}
               isActive={isCompleted}
               className={`flex-shrink-0 ${isCompleted ? 'bg-orange-main text-white' : 'bg-orange-100 text-white'}`}
               />
-            <h3 className="text-style-subheading flex-grow">{name}</h3>
-            <Info className="w-4 h-4 text-gray-400" />
+            <h3 className="text-style-heading flex-grow">{name}</h3>
           </div>
 
           <div className="flex justify-between items-center mt-2">

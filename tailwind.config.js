@@ -44,12 +44,11 @@ module.exports = {
       },
       fontFamily: {
         'nunito': ['Nunito', 'sans-serif'],
-        'sans': ['Inter', 'sans-serif'],
         'heading': ['Poppins', 'sans-serif'],
       },
       fontSize: {
         'xs': ['12px', { lineHeight: '16px' }],
-        'sm': ['14px', { lineHeight: '20px' }],
+        'sm': ['16px'],
         'base': ['16px', { lineHeight: '24px' }],
         'lg': ['18px', { lineHeight: '28px' }],
         'xl': ['20px', { lineHeight: '28px' }],
@@ -57,7 +56,7 @@ module.exports = {
         '3xl': ['30px', { lineHeight: '36px' }],
         '4xl': ['36px', { lineHeight: '40px' }],
       },
-      spacing: {
+      letterSpacing: {
         '0': '0px',
         '1': '4px',
         '2': '8px',
@@ -92,7 +91,7 @@ module.exports = {
       const newUtilities = {
         '.text-style-title-orange': {
           fontSize: '40px',
-          lineHeight: '1', // 1 =  lineHeight to fontSize ratio (40px)
+          lineHeight: '1',
           fontWeight: '900',
           fontFamily: 'Nunito, sans-serif',
           backgroundClip: 'text',
@@ -102,7 +101,7 @@ module.exports = {
         },
         '.text-style-title-white': {
           fontSize: '40px',
-          lineHeight: '1', // 1 =  lineHeight to fontSize ratio (40px)
+          lineHeight: '1',
           fontWeight: '900',
           fontFamily: 'Nunito, sans-serif',
           backgroundClip: 'text',
@@ -112,7 +111,7 @@ module.exports = {
         },
         '.text-style-title-yellow': {
           fontSize: '40px',
-          lineHeight: '1', // 1 =  lineHeight to fontSize ratio (40px)
+          lineHeight: '1',
           fontWeight: '900',
           fontFamily: 'Nunito, sans-serif',
           backgroundClip: 'text',
@@ -122,34 +121,71 @@ module.exports = {
         },
         // Custom class for heading style
         '.text-style-heading': {
-          fontSize: '2rem',
-          lineHeight: '2.5rem',
+          fontSize: '1rem',
+          lineHeight: '1',
           fontWeight: '700',
           fontFamily: 'Nunito, sans-serif',
+          color: 'black',
         },
         // Custom class for subheading style
         '.text-style-subheading': {
           fontSize: '1rem',
-          lineHeight: '2rem',
+          lineHeight: '1',
           fontWeight: '600',
           fontFamily: 'Nunito',
+          color: 'gray',
         },
         // Custom class for base text style
         '.text-style-base': {
           fontSize: '1rem',
-          lineHeight: '1.5rem',
-          fontWeight: '500',
-          fontFamily: 'Nunito, sans-serif',
+          lineHeight: '1rem',
+          fontWeight: '300',
+          fontFamily: 'Nunito',
         },
         // Custom class for decor text style
         '.text-style-decor': {
-          fontSize: '1rem',
+          fontSize: '1.3rem',
           lineHeight: '1.5rem',
-          fontWeight: '600',
+          fontWeight: '500',
           fontFamily: 'Poppins, sans-serif',
         },
+        // Logo text 'Better You'
+        '.text-style-logo': {
+          textAlign: 'center',
+          fontSize: '1.3rem',
+          lineHeight: '1.2rem',
+          fontWeight: '700',
+          fontFamily: 'Nunito, sans-serif',
+          letterSpacing: '0.1em',
+        },
+        // Logo subline 'EVERYDAY'
+        '.text-style-logo-subline': {
+          textAlign: 'center',
+          fontSize: '0.8rem',
+          lineHeight: '1.2rem',
+          fontWeight: '200',
+          fontFamily: 'Poppins, sans-serif',
+          letterSpacing: '0.4em',
+        },
+        // List name
+        '.text-style-list-name': {
+          textAlign: 'left',
+          fontSize: '1.4rem',
+          lineHeight: '1',
+          fontWeight: '700',
+          fontFamily: 'Nunito, sans-serif',
+          letterSpacing: '0.1em',
+        },
+        // Show/hide ticks
+        '.text-style-ticks': {
+          textAlign: 'left',
+          fontSize: '1rem',
+          lineHeight: '1',
+          fontWeight: '600',
+          fontFamily: 'Poppins, sans-serif',
+          letterSpacing: '0.1em',
+        },
       }
-
       // Add the new utility classes to Tailwind, making them responsive and hoverable
       addUtilities(newUtilities, ['responsive', 'hover'])
     }

@@ -1,10 +1,10 @@
 // src/components/layout/TopBar.js
-// src/components/ui/ContextualMenu.js
 import React, { useState } from 'react';
 import { Menu, Bell, User, Settings, House, Info, Pencil, ListCheck, LogOut } from 'lucide-react';
 
 import ContextualMenu from '../ui/ContextualMenu';
 import IconButtonWhite from '../common/IconButtonWhite';
+import Logo from '../common/Logo';
 
 const TopBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,17 +38,15 @@ const TopBar = () => {
 
   return (
     <>
+      {/* Main container */}
       <header className="bg-orange-main border-transparent p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-20 h-14">
+        
         <div className="flex items-center">
-          <IconButtonWhite icon={Menu} onClick={() => setIsMenuOpen(true)} className="mr-3" />
+          {/* Hamburguer button */}
+          <IconButtonWhite icon={Menu} onClick={() => setIsMenuOpen(true)} className="mr-2" />
 
-          <img
-            src={`${process.env.PUBLIC_URL}/assets/symbol-and-text-horizontal-white.svg`}
-            alt="logo"
-            className="w-auto"
-            style={{ maxWidth: '100px' }}
-          />
-
+          <Logo/>
+            
         </div>
         <div className="flex items-center">
           <div className="relative mr-4">

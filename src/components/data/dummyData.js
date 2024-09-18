@@ -3,7 +3,7 @@
 export const habits = [
   {
     id: 'h1',
-    name: 'Exercise',
+    name: 'React & JavaScript brain-backflip training',
     category: 'Physical Health',
     description: 'Develop a daily habit to...',
     benefits: [
@@ -35,7 +35,7 @@ export const habits = [
   },
   {
     id: 'h2',
-    name: 'Sleep Tracking',
+    name: 'Professional prompting marathon',
     category: 'Physical Health',
     description: 'Develop a daily habit to...',
     benefits: [
@@ -67,7 +67,7 @@ export const habits = [
   },
   {
     id: 'h3',
-    name: 'Healthy Eating',
+    name: 'Midnight Pizza Meditation',
     category: 'Physical Health',
     description: 'Develop a daily habit to...',
     benefits: [
@@ -82,7 +82,7 @@ export const habits = [
     ],
     relatedProducts: [
       {
-        name: 'Meal Prep Containers',
+        name: 'A big, fat line of pure, uncut JavaScript-fuckery',
         description: 'Reusable containers for meal planning',
         affiliateLink: 'https://example.com/meal-prep-containers'
       },
@@ -99,7 +99,7 @@ export const habits = [
   },
   {
     id: 'h4',
-    name: 'Hydration',
+    name: 'Donut-based Meal Planning',
     category: 'Physical Health',
     description: 'Develop a daily habit to...',
     benefits: [
