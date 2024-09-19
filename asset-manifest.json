@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/better-you-everyday/static/css/main.62b1ff51.css",
-    "main.js": "/better-you-everyday/static/js/main.910046bf.js",
+    "main.css": "/better-you-everyday/static/css/main.7fcbaa59.css",
+    "main.js": "/better-you-everyday/static/js/main.d63d1695.js",
     "index.html": "/better-you-everyday/index.html",
-    "main.62b1ff51.css.map": "/better-you-everyday/static/css/main.62b1ff51.css.map",
-    "main.910046bf.js.map": "/better-you-everyday/static/js/main.910046bf.js.map"
+    "main.7fcbaa59.css.map": "/better-you-everyday/static/css/main.7fcbaa59.css.map",
+    "main.d63d1695.js.map": "/better-you-everyday/static/js/main.d63d1695.js.map"
   },
   "entrypoints": [
-    "static/css/main.62b1ff51.css",
-    "static/js/main.910046bf.js"
+    "static/css/main.7fcbaa59.css",
+    "static/js/main.d63d1695.js"
   ]
 }
